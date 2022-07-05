@@ -1,0 +1,5 @@
+ext_fram_dma.c:6:6:FRAM_DMA_Init	24	static
+ext_fram_dma.c:33:6:FRAM_DMA_Read	24	static
+ext_fram_dma.c:57:6:FRAM_DMA_Write	24	static
+ext_fram_dma.c:94:6:HAL_SPI_TxCpltCallback	0	static
+ext_fram_dma.c:99:6:HAL_SPI_RxCpltCallback	0	static

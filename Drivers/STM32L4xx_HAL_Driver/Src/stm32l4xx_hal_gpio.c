@@ -523,7 +523,7 @@ void HAL_GPIO_EXTI_IRQHandler(uint16_t GPIO_Pin)
   */
 __weak void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
   /* Prevent unused argument(s) compilation warning */
-	UNUSED(GPIO_Pin);
+//	UNUSED(GPIO_Pin);
 	switch(GPIO_Pin){
 		case GPIO_PIN_8: // up
 			HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
