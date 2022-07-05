@@ -8928,19 +8928,19 @@ void HAL_GPIO_EXTI_IRQHandler(uint16_t GPIO_Pin)
  80035d8:	40010400 	.word	0x40010400
 
 080035dc <HAL_GPIO_EXTI_Callback>:
+/**
   * @brief  EXTI line detection callback.
   * @param  GPIO_Pin Specifies the port pin connected to corresponding EXTI line.
   * @retval None
   */
-__weak void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-{
+__weak void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
  80035dc:	b580      	push	{r7, lr}
  80035de:	b082      	sub	sp, #8
  80035e0:	af00      	add	r7, sp, #0
  80035e2:	4603      	mov	r3, r0
  80035e4:	80fb      	strh	r3, [r7, #6]
   /* Prevent unused argument(s) compilation warning */
-	UNUSED(GPIO_Pin);
+//	UNUSED(GPIO_Pin);
 	switch(GPIO_Pin){
  80035e6:	88fb      	ldrh	r3, [r7, #6]
  80035e8:	f5b3 5f00 	cmp.w	r3, #8192	; 0x2000
